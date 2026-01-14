@@ -3,9 +3,14 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-} /* ===== STYLES GLOBAUX (Design Apple) ===== */
+} 
+/* =========================================================
+   STYLES GLOBAUX
+   Typographie principale + couleurs générales
+========================================================= */
 body {
-    font-family: "Poppins", sans-serif;
+    font-family: "Poppins", sans-serif;/* Police principale */
+
   font-weight: 300;
   font-style: normal;
   color: #111302;
@@ -16,7 +21,10 @@ body {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
-} /* ===== HEADER / NAVIGATION ===== */
+} 
+/* =========================================================
+   HEADER / NAVIGATION
+========================================================= */
 header {
     font-family: "Orbitron", sans-serif;/* Police futuriste */
   font-optical-sizing: auto;
@@ -25,22 +33,25 @@ header {
   background-color: #ffffff;
   border-bottom: 1px solid #e5e5e7;
   padding: 20px 0;
-  position: sticky;
+  position: sticky;/* Header fixe au scroll */
   top: 0;
   z-index: 100;
   backdrop-filter: blur(20px);
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(255, 255, 255, 0.8); 
 }
+/* Organisation du menu */
 nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
+/* Logo */
 .logo {
   font-size: 1.8rem;
   font-weight: 600;
   letter-spacing: -0.5px;
 }
+/* Liens de navigation */
 .nav-links {
   display: flex;
   list-style: none;
@@ -52,7 +63,15 @@ nav {
   font-weight: 500;
   font-size: 1rem;
   transition: opacity 0.3s;
-} /* ===== HERO SECTION ===== */
+}
+/* Effet au survol */
+.nav-links a:hover {
+  opacity: 0.7;
+}
+/* =========================================================
+   HERO SECTION
+   Section d’introduction principale
+========================================================= */
 .hero {
   background-color: #bbb7f0;
   color: #27276a;
@@ -63,6 +82,7 @@ nav {
   justify-content: center;
   align-items: center;
 }
+/* Titre principal */
 .hero h1 {
   font-family: "Orbitron", sans-serif;
   font-optical-sizing: auto;
@@ -73,10 +93,11 @@ nav {
   letter-spacing: -1px;
   line-height: 1.1;
 }
+/* Texte de présentation */
 .hero p {
-    font-family: "Orbitron", sans-serif;
+    font-family: "Atkinson Hyperlegible Mono", sans-serif;
   font-optical-sizing: auto;
-  font-weight: 900;
+  font-weight: 400;
   font-style: normal;
   font-size: 1.3rem;
   color: #56566d;
@@ -87,6 +108,7 @@ nav {
   line-height: 1.6;
   font-weight: 400;
 }
+/* Bouton principal */
 .cta-button {
     font-family: "Orbitron", sans-serif;
   font-optical-sizing: auto;
@@ -100,7 +122,13 @@ nav {
   text-decoration: none;
   transition: all 0.3s;
   font-size: 1.05rem;
-} /* ===== ABOUT SECTION ===== */
+}
+  /* Effet hover bouton */
+.cta-button:hover {
+  background-color: #4d1ebc;
+  transform: translateY(-2px);
+}
+/* ===== ABOUT SECTION ===== */
 .about {
   background-color: #f3f19e;
   padding: 120px 0;
@@ -117,6 +145,7 @@ nav {
   text-align: center;
   letter-spacing: -0.5px;
 }
+/* Titre de section */
 .about-content {
   display: flex;
   gap: 60px;
@@ -125,11 +154,13 @@ nav {
 .about-image {
   flex: 1;
 }
+/* Image */
 .about-image img {
   width: 100%;
   border-radius: 20px;
   display: block;
 }
+/* Texte */
 .about-text {
   flex: 1;
 }
@@ -145,7 +176,10 @@ font-family: "Orbitron", sans-serif;
   letter-spacing: -0.5px;
 }
 .about-text p {
-    font-family: "Orbitron", sans-serif;
+    font-family: "Atkinson Hyperlegible Mono", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
   font-size: 1.1rem;
   color: #56566d;
   margin-bottom: 24px;
@@ -156,6 +190,7 @@ font-family: "Orbitron", sans-serif;
   background-color: #bbb7f0;
   padding: 120px 0;
 }
+/* Grille des compétences */
 .skills-grid {
   display: flex;
   gap: 40px;
@@ -163,6 +198,7 @@ font-family: "Orbitron", sans-serif;
   justify-content: space-around;
   flex-wrap: wrap;
 }
+/* Carte de compétence */
 .skill-card {
     color:#0d0d5c;
   background:rgb(54, 10, 123);
@@ -173,10 +209,12 @@ font-family: "Orbitron", sans-serif;
   min-width: 250px;
   transition: all 0.3s;
 }
+/* Titre compétence */
 .skill-icon {
   font-size: 3.5rem;
   margin-bottom: 20px;
 }
+/* Description compétence */
 .skill-card h3 {
     font-family: "Orbitron", sans-serif;
   font-optical-sizing: auto;
@@ -188,10 +226,11 @@ font-family: "Orbitron", sans-serif;
   margin-bottom: 12px;
 }
 .skill-card p {
-    font-family: "Orbitron", sans-serif;
+      font-family: "Atkinson Hyperlegible Mono", sans-serif;
   font-optical-sizing: auto;
-  font-weight: 900;
+  font-weight: 400;
   font-style: normal;
+
   color: #cdcdd1;
   font-size: 1rem;
   font-weight: 400;
@@ -232,7 +271,7 @@ font-family: "Orbitron", sans-serif;
   color: rgb(86, 17, 142);
   font-family: "Orbitron", sans-serif;
   font-optical-sizing: auto;
-  font-weight: <weight>;
+  font-weight: 600;
   font-style: normal;
   font-size: 1.3rem;
   font-weight: 600;
@@ -252,10 +291,11 @@ font-family: "Orbitron", sans-serif;
   letter-spacing: -0.5px;
 }
 .project-content p {
-    font-family: "Orbitron", sans-serif;
+      font-family: "Atkinson Hyperlegible Mono", sans-serif;
   font-optical-sizing: auto;
-  font-weight: 900;
+  font-weight: 400;
   font-style: normal;
+
   color: #a6a6a8;
   margin-bottom: 20px;
   font-size: 1.1rem;
@@ -264,7 +304,7 @@ font-family: "Orbitron", sans-serif;
 .project-link {
     font-family: "Orbitron", sans-serif;
   font-optical-sizing: auto;
-  font-weight: <weight>;
+  font-weight: 500;
   font-style: normal;
   display: inline-block;
   color: #eefe03;
@@ -272,7 +312,11 @@ font-family: "Orbitron", sans-serif;
   font-weight: 500;
   transition: color 0.3s;
   font-size: 1.05rem;
-} /* ===== CONTACT SECTION / FORM ===== */
+}
+.project-link:hover {
+  color: #a017c2;
+}
+/* ===== CONTACT SECTION / FORM ===== */
 .contact {
   background-color: #bbb7f0;
   
@@ -280,9 +324,9 @@ font-family: "Orbitron", sans-serif;
 }
 .contact h2 {
     font-family: "Orbitron", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: <weight>;
-  font-style: normal;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
   text-align: center;
   font-size: 3rem;
   font-weight: 700;
@@ -302,10 +346,11 @@ font-family: "Orbitron", sans-serif;
   gap: 8px;
 }
 .form-group label {
-    font-family: "Orbitron", sans-serif;
+      font-family: "Atkinson Hyperlegible Mono", sans-serif;
   font-optical-sizing: auto;
-  font-weight: <weight>;
+  font-weight: 500;
   font-style: normal;
+
   font-weight: 500;
   font-size: 1rem;
   color: #1d1d1f;
@@ -319,14 +364,15 @@ font-family: "Orbitron", sans-serif;
   font-size: 1rem;
   transition: all 0.3s;
 }
+/* Champs */
 .form-group textarea {
   resize: vertical;
   min-height: 120px;
-}
+}/* Bouton d’envoi */
 .submit-button {
     font-family: "Orbitron", sans-serif;
   font-optical-sizing: auto;
-  font-weight: <weight>;
+  font-weight: 900;
   font-style: normal;
   background-color: #1b0b7e;
   color: rgb(252, 248, 3);
@@ -342,7 +388,14 @@ font-family: "Orbitron", sans-serif;
   cursor: pointer;
   transition: all 0.3s;
   margin-top: 16px;
-} /* ===== FOOTER ===== */
+}
+.submit-button:hover {
+  background-color: #320fa5;
+  transform: translateY(-2px);
+}
+/* =========================================================
+   FOOTER
+========================================================= */
 footer {
   background-color: #f3f19e;
   color: #6f6f74;
@@ -361,7 +414,7 @@ footer {
 .footer-section h3 {
      font-family: "Orbitron", sans-serif;
   font-optical-sizing: auto;
-  font-weight: <weight>;
+  font-weight: 600;
   font-style: normal;
   font-size: 1rem;
   font-weight: 600;
@@ -369,12 +422,15 @@ footer {
   margin-bottom: 12px;
 }
 .footer-section p {
-     font-family: "Orbitron", sans-serif;
+       font-family: "Atkinson Hyperlegible Mono", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
+
   font-size: 0.9rem;
   line-height: 1.6;
+
+
 }
 .social-links {
   display: flex;
@@ -470,4 +526,3 @@ footer {
     max-width: 100%;
   }
 }
-
